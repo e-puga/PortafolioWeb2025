@@ -1,0 +1,183 @@
+p {
+  color: #b0b3b8;
+}
+
+.container {
+  padding: 20px 15%;
+  color: #ffffff;
+  background-color: #000313;
+}
+
+/* CONTENERDOR PRINCIPAL*/
+
+.container-principal {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 25px 230px;
+}
+
+.container-principal h1 {
+  margin: 0; /* quita el espacio entre títulos */
+  font-size: 40px;
+}
+
+.container-principal p {
+  font-size: 20px;
+}
+
+.container-principal button {
+  margin: 10px auto;
+  padding: 10px 24px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #4b7bf5;
+  color: white;
+  transition: all 0.3s ease; /*animacion suave*/
+}
+
+.container-principal button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* CONTENERDOR SOBRE MI*/
+.container-sobre-mi {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+}
+
+.container-sobre-mi h1 {
+  font-size: 2rem;
+}
+
+.container-sobre-mi p {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.container-sobre-mi-img {
+  display: flex;
+  padding: 20px 20px;
+  justify-content: space-around;
+}
+
+/* CONTENERDOR PROYECTOS*/
+.container-proyectos {
+  padding: 25px 0;
+}
+
+.container-proyectos h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.proyecto-card {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(32, 32, 32, 0.3);
+  background-color: #2a2e37;
+}
+
+.proyecto-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.proyecto-info h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.proyecto-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.proyecto-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-github {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #4b7bf5;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-demo {
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 6px;
+  border: 1 solid #444c56;
+  background-color: #2d333b;
+  cursor: pointer;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* CONTENERDOR CONTACTO*/
+.container-contacto {
+  padding: 25px 0;
+}
+
+.container-contacto p {
+  /*text-align: center;*/
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.container-contacto form {
+  display: flex;
+  flex-direction: column; /* 👈 coloca inputs hacia abajo */
+  gap: 15px; /* espacio entre inputs */
+  /*max-width: 500px;*/
+  margin: 0 auto; /* centra el formulario */
+}
+
+.container-contacto input,
+.container-contacto textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #000313;
+  color: #b0b3b8;
+}
+
+.container-contacto textarea {
+  min-height: 80px; /* para que no quede muy chiquito */
+  resize: vertical; /* permitir que el usuario ajuste altura */
+}
+
+.container-contacto button {
+  padding: 12px;
+  background-color: #4b7bf5; /* azul primary */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container-contacto button:hover {
+  background-color: #0056b3;
+}
